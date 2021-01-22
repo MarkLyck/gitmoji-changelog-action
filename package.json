@@ -1,0 +1,33 @@
+{
+    "name": "gitmoji-changelog-action",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MarkLyck/gitmoji-changelog-action.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MarkLyck/gitmoji-changelog-action/issues"
+    },
+    "homepage": "https://github.com/MarkLyck/gitmoji-changelog-action#readme",
+    "private": true,
+    "main": "index.js",
+    "scripts": {
+        "start": "node ./index.js",
+        "test": "jest",
+        "gc": "gitmoji -c",
+        "gca": "git add . && yarn gc",
+        "gcap": "yarn gca && git push"
+    },
+    "dependencies": {
+        "actions-toolkit": "^2.2.0",
+        "yargs": "^15.3.1"
+    },
+    "devDependencies": {
+        "gitmoji-cli": "^3.2.18",
+        "jest": "^25.2.7",
+        "standard": "^14.3.3"
+    }
+}
