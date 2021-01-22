@@ -1,0 +1,8 @@
+name: Gitmoji Changelog Action
+description: Generate gitmoji changelog and commit back to branch
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: chevron-up
+  color: blue
