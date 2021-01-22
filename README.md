@@ -20,5 +20,5 @@ jobs:
         with:
           fetch-depth: 0 # 👈 Required to retrieve git history for changelog
       - name: Gitmoji Changelog Action
-        uses: MarkLyck/gitmoji-changelog-action@0.0.3
+        uses: MarkLyck/gitmoji-changelog-action@1.0.2
 ```
