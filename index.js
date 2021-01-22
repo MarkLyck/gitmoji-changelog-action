@@ -13,6 +13,8 @@ Toolkit.run(async tools => {
 
         // run gitmoji changelog
         await tools.runInWorkspace('npx', ['gitmoji-changelog'])
+        await tools.runInWorkspace('git', ['add', 'CHANGELOG.md'])
+
         // commit changes
         await tools.runInWorkspace('git', ['commit', '-a', '-m', `${commitMessage}`])
 
