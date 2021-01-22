@@ -19,7 +19,7 @@ LABEL "com.github.actions.icon"="chevron-up"
 LABEL "com.github.actions.color"="blue"
 
 # Copy the package.json and package-lock.json
-# COPY package*.json ./
+COPY package*.json ./
 
 # Install dependencies
 RUN apt-get update
